@@ -1,0 +1,73 @@
+.reviews_cards{
+  display: flex;
+  gap: 24px;
+  padding-bottom: 120px;
+}
+.card{
+  border: 1px solid #6066666b;
+  padding-bottom: 24px;
+  height: 400px;
+}
+.card_top{
+  display: flex;
+}
+.image{
+  width: 79px;
+  height: 79px;
+  border-radius: 50%;
+  border: 0;
+  margin:  24px 16px 16px 24px;
+}
+.image img{
+  width: 100%;
+}
+.info{
+  padding: 40px 0 30px 0;
+  text-align: start;
+}
+.info span{
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFFFFF;
+  opacity: 0.8;
+  margin-bottom: 2px;
+}
+.info p{
+  font-size: 16px;
+  line-height: 24px;
+  color: #808080;
+  opacity: 0.72;
+}
+.card_bottom {
+  padding: 0 24px 0 24px;
+  text-align: start;
+}
+.card_bottom span{
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+ 
+}
+/* .cursor{
+  width: 146px;
+  height: 146px;
+  border-radius: 50%;
+  background-image: url(/public//Images/cursor.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  display: none;
+  gap: 10px;
+  border: 1px solid #0F0F0F;
+  box-sizing: border-box;
+  background-color: white;
+}
+.card:hover.cursor{
+  display: block; 
+} */
+
+@media screen and (max-width: 540px) {
+ .card_bottom span{
+   font-size: 14px;
+   left: 20px;
+ }
+}

@@ -1,0 +1,21 @@
+.reviews h1{
+  font-size: 64px;
+  line-height: 72px;
+  color: #FFFFFF;
+  padding-top: 120px;
+  padding-bottom: 40px;
+}
+@media screen and (max-width: 1024px) {
+  .reviews h1 {
+    font-size: 54px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .reviews h1 {
+    font-size: 34px;
+    padding-top: 0px;
+    padding-bottom: 10px;
+  }
+}

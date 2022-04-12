@@ -1,0 +1,98 @@
+.initiators{
+  background-color: white;
+}
+.initiators h1{
+  font-size: 72px;
+  line-height: 80px;
+  color: #0F0F0F;
+  padding: 104px 0 24px 0;
+}
+.initiators h1 span{
+   color: #1878F3;
+}
+.initiators_desc{
+  display: flex;
+  gap: 24px;
+}
+.initiators_desc span:nth-child(1){
+  font-size: 32px;
+  line-height: 40px;
+  color: #0F0F0F;
+  max-width: 708px;
+}
+
+.initiators_desc span:nth-child(2){
+  font-size: 24px;
+  line-height: 36px;
+  color: #0F0F0F;
+  opacity: 0.8;
+}
+.initiators_desc p{
+  margin-top: 40px;
+  margin-bottom: 48px;
+}
+.initiators_cards{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding-bottom: 136px;
+}
+.card{
+  width: calc(100% / 2 - 24px );
+}
+.card img{
+  width: 100%;
+  object-fit: cover;
+}
+.br{
+  display: none;
+}
+@media screen and (max-width: 1024px) {
+  .initiators h1{
+    font-size: 60px;
+    padding-top: 40px;
+  }
+  .br{
+    display: block;
+  }
+  .initiators_desc{
+    display: block;
+  }
+  .initiators_desc span:nth-child(1){
+    font-size: 25px;
+    line-height: 20px;
+  }
+  .initiators_desc span:nth-child(3){
+    font-size: 20px;
+    display: block;
+    margin-top: 20px;
+  }
+  .initiators_desc span p{
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 540px) {
+  .initiators h1{
+    font-size: 40px;
+    padding-top: 40px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .initiators_desc span:nth-child(1){
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .initiators_desc span:nth-child(3){
+    font-size: 18px;
+  }
+  .initiators_cards{
+    display: block;
+    padding-bottom: 50px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .initiators h1{
+    font-size: 30px;
+    padding: 0;
+  }
+}

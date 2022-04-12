@@ -1,0 +1,58 @@
+@font-face {
+  font-family : "Gilroy";
+  src         : url("../../public/Fonts/Gilroy-Regular.woff") format("woff"),
+  url("../../public/Fonts/Gilroy-Regular.woff2") format("woff2");
+  font-weight : 400;
+  font-style  : normal;
+  font-display: swap;
+}
+@font-face {
+  font-family : "Gilroy";
+  src         : url("../../public/Fonts/Gilroy-Medium.woff") format("woff"),url("../../public/Fonts/Gilroy-Medium.woff2") format("woff2");;
+  font-weight : 500;
+  font-style  : normal;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family : "Gilroy";
+  src         : url("../../public/Fonts/Gilroy-Semibold.woff") format("woff"),url("../../public/Fonts/Gilroy-Semibold.woff2") format("woff2");
+  font-weight : 600;
+  font-style  : normal;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family : "Gilroy";
+  src         : url("../../public/Fonts/Gilroy-Bold.woff") format("woff"),url("../../public/Fonts/Gilroy-Bold.woff2") format("woff2");
+  font-weight : 700;
+  font-style  : normal;
+  font-display: swap;
+ 
+}
+
+.gl_regular {
+  font-family : "Gilroy";
+  font-weight: 400;
+  font-style : normal;
+}
+
+.gl_medium {
+  font-family : "Gilroy";
+  font-weight: 500;
+  font-style : normal;
+}
+
+.gl_semibold {
+  font-family : "Gilroy";
+  font-weight: 600;
+  font-style : normal;
+}
+
+.gl_bold {
+  font-family : "Gilroy";
+  font-weight: 700;
+  font-style : normal;
+}

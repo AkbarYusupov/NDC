@@ -1,0 +1,138 @@
+.main_btn{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  outline: none;
+  border: 1px solid white;
+  background: transparent;
+}
+
+.main_btn:hover{
+  background-color: white;
+  cursor: pointer;
+}
+.main_btn:hover svg path{
+  stroke: black;
+}
+.main_small__btn{
+  width: 144px;
+  height: 144px;
+  border-radius: 50%;
+  outline: none;
+  border: 1px solid white;
+  background: transparent;
+  position: relative;
+  z-index: 10;
+}
+.main_small__btn svg {
+  transition: 0.5s ease;
+}
+.main_small__btn:hover{
+  background-color: white;
+  cursor: pointer;
+}
+
+.main_small__btn:hover  svg {
+  transform: rotate(30deg);
+}
+.main_small__btn:hover svg path{
+  stroke: black;
+}
+
+.update{
+  text-align: center;
+  margin-bottom: 80px;
+}
+.update button{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 1px solid white;
+  outline: none;
+  background-color: transparent;
+  transition: .5s ease;
+}
+.update button:hover  {
+  background-color: #FFFFFF;
+  cursor: pointer;
+}
+.update button svg{
+  transition: .5s ease;
+}
+.update button:hover svg{
+  transform: rotate(360deg);
+  width: 42px;
+  height: 38px;
+}
+.update button:hover svg path{
+stroke: black;
+}
+.login_btn{
+  width: 144px;
+  height: 144px;
+  border-radius: 50%;
+  outline: none;
+  border: 1px solid rgb(0, 0, 0);
+  background: transparent;
+  position: relative;
+  z-index: 10;
+}
+.login_btn svg {
+  transition: 0.5s ease;
+}
+.login_btn svg path{
+stroke: black;  
+}
+.login_btn:hover{
+  cursor: pointer;
+}
+
+.login_btn:hover svg {
+  transform: rotate(30deg);
+}
+
+@media screen and (max-width: 1024px) {
+ .main_btn{
+   width: 150px;
+   height: 150px;
+ }
+ .main_btn svg{
+    width: 60px;
+    height: 33px;
+  }
+
+  .update button{
+    width: 150px;
+    height: 150px;
+  }
+  .update button svg{
+     width: 60px;
+     height: 33px;
+   }
+   .update{
+    margin: 40px 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main_btn,.main_small__btn,.login__btn {
+    width: 100px;
+    height: 100px;
+  }
+  .main_btn svg,.main_small__btn svg.login__btn svg{
+     width: 50px;
+     height: 23px;
+   }
+   .update button{
+    width: 100px;
+    height: 100px;
+  }
+  .update button svg{
+     width: 50px;
+     height: 23px;
+   }
+ }
+
+
+
+
+

@@ -1,0 +1,44 @@
+.about_bottom{
+ background: #F5F5F7;
+}
+.about_bottom-inner{
+  width: 75%;
+  margin: 0 0 0 auto;
+}
+.about_title{
+  font-size: 32px;
+  line-height: 48px;
+  padding-top: 120px;
+  padding-bottom: 56px;
+}
+.box_top,.box_bottom{
+  display: flex;
+  gap: 42px;
+}
+.box_card{
+  width: calc(100% / 2 - 42px);
+}
+.box_card span{
+  font-size: 120px;
+  line-height: 128px;
+}
+.box_card p{
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 56px;
+}
+.line{
+  height: 1px;
+  background-color: #525252;
+  margin: 16px 0 24px 0;
+}
+.box_bottom .box_card{
+  color: #667B8C;
+}
+.box_bottom{
+  padding-bottom: 120px;
+}
+.box_bottom .line{
+  height: 1px;
+  background-color:  #667B8C;
+}

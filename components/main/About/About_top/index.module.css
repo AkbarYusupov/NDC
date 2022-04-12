@@ -1,0 +1,50 @@
+.about{
+  padding-top: 215px;
+}
+.about h1{
+  font-size: 64px;
+  line-height: 72px;
+  color: #FFFFFF;
+  padding-bottom: 64px;
+}
+.about_img{
+  padding-bottom: 64px;
+}
+.about_img img{
+  width: 100%;
+  display: block;
+}
+.competencies{
+  display: flex;
+  justify-content: space-between;
+}
+.competencies_left h3{
+  font-size: 40px;
+  line-height: 48px;
+  color: #FFFFFF;
+  padding-bottom: 24px;
+}
+.competencies_left p{
+  font-size: 24px;
+  line-height: 36px;
+  color: #FFFFFF;
+  opacity: 0.8;
+  max-width: 608px;
+}
+.competencies_left p:first-of-type{
+  padding-bottom: 40px;
+} 
+.competencies_right ul li{
+  font-size: 52px;
+  line-height: 56px;
+  color: #FFFFFF;
+  padding-bottom: 24px;
+}
+.competencies_right ul li:last-of-type {
+  padding-bottom: 120px;  
+}
+
+.competencies_right ul li:hover{
+  color: #1878F3;
+  cursor: pointer;
+}
