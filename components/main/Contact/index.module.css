@@ -25,6 +25,7 @@
 .login_top{
   display: flex;
   flex-wrap: wrap;
+  gap: 24px;
   justify-content: space-between;
   align-items: center;
 }
@@ -65,6 +66,7 @@
 }
 .login_bottom{
   display: flex;
+  flex-wrap: wrap;
 }
 .login_bottom label{
   font-size: 16px;
@@ -87,4 +89,37 @@
   top: 5px;
   box-sizing: border-box;
   display: inline-block;
+}
+@media screen and (max-width: 1024px) {
+  .login{
+    position: relative;
+   width: 100%;
+   left: 0;
+   top: 20px;
+  }
+  .map_bottom iframe{
+    height: 700px;
+  }
+  .map_top{
+    padding-top: 120px;
+  }
+  .map_top h1{
+    font-size: 50px;
+    line-height: 50px;
+    padding-bottom: 50px;
+   
+  }
+}
+@media screen and (max-width: 768px) {
+  .map_top h1{
+    font-size: 36px;
+    line-height: 40px;
+  }
+  .map_bottom iframe{
+    height: 400px;
+  }
+  .login_bottom{
+   justify-content: center;
+   gap: 24px;
+  }
 }

@@ -20,7 +20,7 @@ export default function index() {
             </div>
             <div className={styles['link']}>
               <span className='gl_regular'>Общие вопросы</span>
-              <Link href={"info@ndc.uz"}>
+              <Link href="/info@ndc.uz">
                 <a className='gl_medium'>info@ndc.uz</a>
               </Link>
             </div>
@@ -31,7 +31,7 @@ export default function index() {
             </div>
             <div className={styles['link_2']}>
               <span className='gl_regular'>PR и мероприятия</span>
-              <Link href={'pr@buroburo.ru'}>
+              <Link href='/pr@buroburo.ru'>
                 <a className='gl_medium'>pr@buroburo.ru</a>
               </Link>
             </div>

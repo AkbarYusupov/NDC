@@ -1,6 +1,7 @@
 import React from 'react';
 import Services from '../components/main/Services/index';
 import MainForm from '../components/main/Main_form/index'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 const index = () => {
   return (
     <>
@@ -11,3 +12,8 @@ const index = () => {
 }
 
 export default index;
+export const getStaticProps = async ({ locale }) => ({
+  props: {
+    ...(await serverSideTranslations(locale, ['common'])),
+  },
+})

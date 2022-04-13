@@ -64,7 +64,26 @@
 .card:hover.cursor{
   display: block; 
 } */
+@media screen and (max-width: 1024px) {
+  .reviews_cards{
+    padding-bottom: 46px;
+  }
+}
 
+@media screen and (max-width: 768px) {
+  .card{
+    height: 100%;
+  }
+  .card_bottom{
+    padding: 0 16px ;
+  }
+  .card_bottom span{
+    font-size: 14px;
+  }
+  .reviews_cards{
+    padding-bottom: 40px;
+  }
+}
 @media screen and (max-width: 540px) {
  .card_bottom span{
    font-size: 14px;

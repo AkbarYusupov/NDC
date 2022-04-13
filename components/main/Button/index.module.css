@@ -114,11 +114,11 @@ stroke: black;
   }
 }
 @media screen and (max-width: 768px) {
-  .main_btn,.main_small__btn,.login__btn {
+  .main_btn, .main_small__btn, .login_btn {
     width: 100px;
     height: 100px;
   }
-  .main_btn svg,.main_small__btn svg.login__btn svg{
+  .main_btn svg, .main_small__btn svg, .login_btn svg{
      width: 50px;
      height: 23px;
    }
@@ -130,6 +130,10 @@ stroke: black;
      width: 50px;
      height: 23px;
    }
+   .update{
+    margin: 20px 0;
+  }
+ 
  }
 
 

@@ -10,30 +10,29 @@ export default function SwiperReviews() {
       <Swiper
         slidesPerView={3}
         spaceBetween={30}
-        loop={true}
+    
         autoplay={{
           delay: 2500,
-          disableOnInteraction: false,
         }}
-        loopFillGroupWithBlank={true}
+       
         modules={[Autoplay]}
-      //   breakpoints= {  
-      // {
-      //     320: {       
-      //        slidesPerView: 1,
-      //        spaceBetween: 10     
-      //     },       
-      //     640: {       
-      //        slidesPerView: 2,       
-      //        spaceBetween: 20     
-      //     },
-      //     1440: {       
-      //       slidesPerView: 3,       
-      //       spaceBetween: 30     
-      //    } }
-          
-      
-      //  }
+        breakpoints= {  
+          {
+            
+            320: {       
+              slidesPerView: 1,       
+              spaceBetween: 10     
+           },      
+              640: {       
+                 slidesPerView: 2,       
+                 spaceBetween: 20     
+              },
+             1440: {       
+              slidesPerView: 3,       
+              spaceBetween: 30     
+           }
+           }
+          }
         className={styles["mySwiper"]}
       >
         <SwiperSlide>

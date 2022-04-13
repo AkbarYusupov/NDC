@@ -5,15 +5,21 @@ import Team from '../components/main/Swiper/Team/index'
 import MainPartners from '../components/main/Main_partners/index'
 import MainReviews from '../components/main/Main_Reviews/index'
 import MainForm from '../components/main/Main_form/index'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 export default function about() {
   return (
     <>
-    <AboutTop/>
-    <AboutBottom/>
-    <Team/>
-    <MainPartners/>
-    <MainReviews/>
-    <MainForm/>
+      <AboutTop />
+      <AboutBottom />
+      <Team />
+      <MainPartners />
+      <MainReviews />
+      <MainForm />
     </>
   )
 }
+export const getStaticProps = async ({ locale }) => ({
+  props: {
+    ...(await serverSideTranslations(locale, ['common'])),
+  },
+})

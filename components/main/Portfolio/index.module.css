@@ -22,12 +22,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
   padding-top: 133px;
   position: relative;
 }
 .portfolio_btn{
   transform: rotate(120deg);
   max-height: 100%;
+
 }
 .portfolio_img{
   max-width: 708px;
@@ -36,7 +39,11 @@
   width: 100%;
   object-fit: cover;
 }
-
+@media screen and (max-width: 1366px) {
+.portfolio{
+  padding-top: 60px;
+}
+}
 @media screen and (max-width: 1200px) {
   .portfolio_top{
   display: block;
@@ -47,9 +54,23 @@
   max-width: 100%;
   }
   }
+
+@media screen and (max-width: 950px) {
+  .portfolio{
+ justify-content: center;
+}
+.portfolio_btn{
+order: 2;
+}
+.portfolio_img{
+  max-width: 100%;
+  order: 1;
+}
+  }
 @media screen and (max-width: 768px) {
   .portfolio_top{
-  padding-bottom: 40px;
+  padding-bottom: 0;
+  padding-top: 120px;
   }
   .portfolio_top h1{
   font-size: 50px;
@@ -62,6 +83,9 @@
 @media screen and (max-width: 650px) {
 .portfolio_top h1{
   font-size: 40px;
+}
+.portfolio{
+  padding-top: 30px;
 }
 
 }

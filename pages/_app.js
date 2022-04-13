@@ -3,16 +3,16 @@ import { appWithTranslation } from 'next-i18next';
 import Header from '../components/header/index';
 import Footer from '../components/footer/index'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-import * as React from 'react';
 
 
 function MyApp({ Component, pageProps }) {
-  
-  return <>
+  return(
+  <>
     <Header  />
     <Component {...pageProps} />
     <Footer />
   </>
+  )
 }
 export default appWithTranslation(MyApp)
 export const getStaticProps = async ({ locale }) => ({

@@ -10,14 +10,28 @@ export default function SwiperReviews() {
        slidesPerView={3}
        spaceBetween={30}
        slidesPerGroup={3}
-       loop={true}
        autoplay={{
          delay: 2500,
-         disableOnInteraction: false,
        }}
-       loopFillGroupWithBlank={true}
        modules={[Autoplay]}
      className={styles["mySwiper"]}
+     breakpoints= {  
+      {
+        
+        320: {       
+          slidesPerView: 1,       
+          spaceBetween: 10     
+       },      
+          640: {       
+             slidesPerView: 2,       
+             spaceBetween: 20     
+          },
+         1440: {       
+          slidesPerView: 3,       
+          spaceBetween: 30     
+       }
+       }
+      }
       >
         <SwiperSlide>
           <div className={styles['card']}>

@@ -22,7 +22,7 @@ export default function MainTop() {
       </div>
       <div className={styles['main_btn-bottom']}>
         <button>
-          <Link href={"#portfolio"}>
+          <Link href="#portfolio">
           <a></a>
           </Link>
         </button>

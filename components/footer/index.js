@@ -13,7 +13,7 @@ export default function Footer() {
               +998 97 666 66 66
             </a>
           </Link>
-          <Link href='info@ndc.uz' target="_blank">
+          <Link href='/info@ndc.uz' target="_blank">
             <a className='gl_regular'>
               info@ndc.uz
             </a>

@@ -3,10 +3,6 @@
   background: rgb(0, 0, 0);
   display: none;
 }
-.tab{
-  font-size: 32px;
-  line-height: 40px;
-}
 .tab:nth-child(1){
   margin-right: 24px;
 }
@@ -29,7 +25,7 @@ padding: 160px 0 32px 0;
 }
 .tab_cards{
   display: flex;
-  gap: 24px;
+  justify-content: space-between;
   padding-top: 64px;
 }
 .card_left , .card_right{
@@ -66,113 +62,52 @@ padding: 160px 0 32px 0;
 .btn{
   padding: 100px 0;
 }
-/* 
-.tabpanel::-webkit-scrollbar-track
-{
-	border-radius: 10px;
-	background-color: #F5F5F5;
-}
-
-.tabpanel::-webkit-scrollbar
-{
-	width: 7px;
-  margin-right: 20px;
-	background-color: #F5F5F5;
-}
-.tabpanel{
-  padding: 0;
-}
-.tabpanel a{
-  text-decoration: none;
-  margin-bottom: 20px;
-}
-.tabpanel::-webkit-scrollbar-thumb
-{
-	border-radius: 10px;
-	background-color:rgb(0, 0, 0);
-}
-.MuiTabs-indicatorSpan{
-  height: 5px;
-  background-color: rgb(255, 255, 255);
-} */
-
-/* @media screen and (max-width: 1180px){
-
- .box{
-  width: 450px;
- }
- .address-title,.gmail-title,.number-title{
-   font-size: 16px;
- }
- .address,.gmail,.number{
-   font-size: 18px;
- }
- .p{
-   padding: 16px;
- }
-}
-@media screen and (max-width: 768px){
+@media screen and (max-width: 1024px){
 .box{
-  left: 10%;
+  padding-top: 80px;
+  padding-bottom: 20px;
 }
-.tabpanel{
-  max-height: 260px;
-  overflow: auto;
-  padding-right: 20px;
+.btn{
+  padding: 20px 0;
 }
-.tab{
-  width: 100px;margin: 0 auto;
-}
-.tabs{
-  margin: 0 auto;
-}
-}
- @media screen and (max-width: 599px){
-.box{
-  padding: 24px;
-  height: 400px;
-  width: 300px;
 }
 
-.address,.gmail,.number{
-  margin-bottom: 16px;
-}
-.p{
-  padding: 10px;
-}
-.address-title,.gmail-title,.number-title{
-  font-size: 14px;
-}
-.address,.gmail,.number{
-  font-size: 16px;
-}
-.maps{
-  margin-bottom: 225px;
-}
-
-  } 
- @media screen and (max-width: 425px){
+@media screen and (max-width: 910px){
+  .box{
+    display: block;
+  }
+  .tab_cards{
+    padding-top: 40px;
+  }
+  }
+  @media screen and (max-width: 768px){
     .box{
+      padding-top: 50px;
+      padding-bottom: 10px;
+    }
+    .tab_cards{
+     display: block;
+    }
+    .card_left,.card_right{
       width: 100%;
-      left: 0;
     }
-    .tabs{
-      font-size: 16px;
-     display: flex;
-     justify-content: center;
-    }
-    .tab{
-      padding: 5px;
-      font-size: 12px;
-      margin: 0;
-      width: 100px;
-    }
-    .address-title,.gmail-title,.number-title{
-      font-size: 12px;
-    }
-    .address,.gmail,.number{
-      font-size: 14px;
-    }
-  
-      }  */
-    
+    .card_left .card ,.card_right .card{
+      height: 100%;
+      padding-bottom: 60px;
+  }
+  .btn{
+    padding: 0;
+  }
+}
+@media screen and (max-width: 600px){
+.tab_name{
+  font-size: 30px;
+  line-height: 25px;
+}
+}
+@media screen and (max-width: 475px){
+  .card_left .card ,.card_right .card{
+    padding-bottom: 30px;
+}
+
+}
