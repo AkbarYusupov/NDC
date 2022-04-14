@@ -8,27 +8,27 @@ import styles from './tab.module.css';
 import Card from './Card'
 import Card_2 from './Card-2'
 // import { useTranslation } from 'next-i18next'
-// import { Link } from '@mui/material';
+
 import Tabs from '@mui/material/Tabs';
 import Button from '../Button/index3';
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
   return (
-   <>
-    <div
-      role="tabpanel"
-      hidden={value !== index}
-      id={`simple-tabpanel-${index}`}
-      aria-labelledby={`simple-tab-${index}`}
-      {...other}
-    >
-      {value === index && (
-        <Box sx={{marginBottom: "20px"}}>
-          <Typography>{children}</Typography>
-        </Box>
-      )}
-    </div>
-   </>
+    <>
+      <div
+        role="tabPanel"
+        hidden={value !== index}
+        id={`simpleTabpanel-${index}`}
+        ariaLabelledby={`simpleTab-${index}`}
+        {...other}
+      >
+        {value === index && (
+          <Box sx={{ marginBottom: "20px" }}>
+            <Typography>{children}</Typography>
+          </Box>
+        )}
+      </div>
+    </>
   );
 }
 
@@ -73,7 +73,7 @@ const StyledTab = styled((props) => <Tab disableRipple {...props} />)(
       fontSize: '20px',
     },
     marginRight: theme.spacing(0),
-    padding:"0",
+    padding: "0",
     color: 'rgba(255, 255, 255, 0.7)',
     '&.Mui-selected': {
       color: '#fff',
@@ -103,38 +103,38 @@ export default function CustomizedTabs() {
           <Tabs className={styles['tabs']}
             value={value}
             onChange={handleChange}
-            aria-label="visible arrows tabs example"
+            ariaLabel="visible arrows tabs example"
           >
-            <StyledTab className={styles['tab']} label='Брендинг'/>
-            <StyledTab className={styles['tab']} label='UX/UI design'/>
-            <StyledTab className={styles['tab']} label ='Packaging'/>
+            <StyledTab className={styles['tab']} label='Брендинг' />
+            <StyledTab className={styles['tab']} label='UX/UI design' />
+            <StyledTab className={styles['tab']} label='Packaging' />
           </Tabs>
         </Box>
         <Box sx={{
         }} className={styles['maps']}>
           <Box>
             <TabPanel value={value} index={0}>
-           <div>
-           <Card_2/>
-           </div>
+              <div>
+                <Card_2/>
+              </div>
             </TabPanel>
             <TabPanel value={value} index={1}>
-            <div>
-           <Card/>
-           </div>
+              <div>
+                <Card/>
+              </div>
             </TabPanel>
             <TabPanel value={value} index={2}>
-            <div>
-           <Card/>
-           </div>
+              <div>
+                <Card/>
+              </div>
             </TabPanel>
-        </Box>
+          </Box>
         </Box>
         <div className={styles['btn']}>
-        <Button/>
+          <Button />
+        </div>
       </div>
-      </div>
-     
+
     </>
   );
 }

@@ -4,6 +4,58 @@
   padding-top: 215px;
   padding-bottom: 56px;
 }
+.services_inner-img{
+  display: flex;
+  justify-content: center;
+}
+.services_inner-img img{
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+.services_info{
+  padding-top: 48px;
+  display: flex;
+  justify-content: space-between;
+}
+.info_text{
+  max-width: 708px;
+}
+.inner-btn{
+  margin: 0 auto;
+}
+.services_inner-bottom{
+  display: flex;
+  max-width: 708px;
+  justify-content: space-between;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.services_inner-bottom ul{
+  border-top: 1px solid rgba(255, 255, 255, 0.548);
+  width: 220px;
+  padding-top: 12px;
+}
+.services_inner-bottom ul li{
+  font-size: 18px;
+  line-height: 32px;
+  color: #FFFFFF;
+  opacity: 0.72;
+}
+.info_text span{
+  color: white;
+  display: block;
+  font-size: 20px;
+  line-height: 32px;
+  color: #FFFFFF;
+  opacity: 0.8;
+}
+.info_text span:first-child{
+  padding-bottom: 24px;
+} 
+.inner-cards{
+  padding-top: 120px;
+}
 .services_top h1{
   display: block;
   font-size: 64px;
@@ -72,6 +124,7 @@
 @media screen and (max-width: 1200px) {
  .services_top{
    display: block;
+   padding-top: 120px;
  }
  .services_top span{
    font-size: 24px;
@@ -85,6 +138,27 @@
  .card{
    width: calc(100% / 2 - 24px);
  }
+}
+  @media screen and (max-width: 1024px) {
+    .services_info{
+      display: block;
+      padding-top: 30px;
+    }
+    .info_text{
+      max-width: 100%;
+      text-align: center;
+    }
+    .inner-btn{
+      text-align: center;
+      display: block;
+      padding: 20px 0;
+    }
+    .services_inner-bottom{
+      max-width: 100%;
+    }
+    .inner-cards{
+      padding-top: 30px;
+    }
   }
   @media screen and (max-width: 768px) {
   .services_top{
@@ -107,6 +181,16 @@
   .card{
     padding: 24px;
   }
+  .info_text span{
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .services_inner-bottom ul{
+    width: 150px;
+  }
+  .services_inner-bottom ul li{
+    font-size: 14px;
+  }
   }
   @media screen and (max-width: 650px) {
     .card{
@@ -120,6 +204,12 @@
     }
     .card_price{
       font-size: 24px;
+    }
+    .services_inner-bottom{
+      padding-bottom: 0;
+    }
+    .inner-cards{
+      padding-top: 5px;
     }
   }
   @media screen and (max-width: 425px) {

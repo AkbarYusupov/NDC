@@ -1,6 +1,6 @@
 import styles from './index.module.css'
 import { useTranslation } from 'next-i18next';
-import Link from 'next/link'
+import Link from 'next/dist/client/link';
 export default function Footer() {
   const { t } = useTranslation('common');
   return (
@@ -13,7 +13,7 @@ export default function Footer() {
               +998 97 666 66 66
             </a>
           </Link>
-          <Link href='/info@ndc.uz' target="_blank">
+          <Link href='/'>
             <a className='gl_regular'>
               info@ndc.uz
             </a>
@@ -23,22 +23,22 @@ export default function Footer() {
           </a>
           </div>
           <div className={styles['footer_right']}>
-            <Link href=""> 
+            <Link href="/"> 
             <a className='gl_medium'>{t("UX/UI")}</a>
             </Link>
-            <Link href=""> 
+            <Link href="/"> 
             <a className='gl_medium'>{t("branding")}</a>
             </Link>
             <Link href=""> 
             <a className='gl_medium'>{t("CRM")}</a>
             </Link>
-            <Link href=""> 
+            <Link href="/"> 
             <a className='gl_medium'>{t("SocialMediaMarketing")}</a>
             </Link>
-            <Link href=""> 
+            <Link href="/"> 
             <a className='gl_medium'>{t("naming")}</a>
             </Link>
-            <Link href=""> 
+            <Link href="/"> 
             <a className='gl_medium'>{t("UX")}</a>
             </Link>
           </div>
@@ -51,13 +51,13 @@ export default function Footer() {
           ©2022 Все права защищены.
           </span>
           <div className={styles['social']}>
-            <Link href="facebook:">
+            <Link href="/">
             <a className='gl_regular'>Facebook</a>
             </Link>
-            <Link href="Instagram:">
+            <Link href="/">
             <a className='gl_regular'>Instagram</a>
             </Link>
-            <Link href="telegram:">
+            <Link href="/">
             <a className='gl_regular'>Telegram</a>
             </Link>
           </div>

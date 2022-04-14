@@ -1,6 +1,6 @@
 import styles from './index.module.css'
 import News from '../Swiper/News/index'
-import Link from 'next/link'
+import Link from 'next/dist/client/link';
 import { useTranslation } from 'next-i18next';
 export default function SwiperNews() {
   const { t } = useTranslation('common');

@@ -5,11 +5,15 @@
   outline: none;
   border: 1px solid white;
   background: transparent;
+  transition: .5s ease;
 }
 
 .main_btn:hover{
   background-color: white;
   cursor: pointer;
+}
+.main_btn:hover{
+  transform: rotate(30deg);
 }
 .main_btn:hover svg path{
   stroke: black;
@@ -23,9 +27,10 @@
   background: transparent;
   position: relative;
   z-index: 10;
+  transition: .5s ease;
 }
 .main_small__btn svg {
-  transition: 0.5s ease;
+  transition: .5s ease;
 }
 .main_small__btn:hover{
   background-color: white;
@@ -78,7 +83,7 @@ stroke: black;
   z-index: 10;
 }
 .login_btn svg {
-  transition: 0.5s ease;
+  transition: .5s ease;
 }
 .login_btn svg path{
 stroke: black;  

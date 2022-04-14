@@ -6,7 +6,7 @@
 .card{
   border: 1px solid #6066666b;
   padding-bottom: 24px;
-  height: 400px;
+  height: 100%;
 }
 .card_top{
   display: flex;
@@ -48,22 +48,6 @@
   color: #FFFFFF;
  
 }
-/* .cursor{
-  width: 146px;
-  height: 146px;
-  border-radius: 50%;
-  background-image: url(/public//Images/cursor.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  display: none;
-  gap: 10px;
-  border: 1px solid #0F0F0F;
-  box-sizing: border-box;
-  background-color: white;
-}
-.card:hover.cursor{
-  display: block; 
-} */
 @media screen and (max-width: 1024px) {
   .reviews_cards{
     padding-bottom: 46px;

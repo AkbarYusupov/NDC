@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import Link from 'next/dist/client/link';
 import Button from '../Button/index3'
 import styles from './index.module.css'
 import { useTranslation } from 'next-i18next';
@@ -16,7 +16,7 @@ export default function Portfolio() {
             <li className='gl_regular'>{t("seeOptimization")}</li>
             <li className='gl_regular'>{t("branding")}</li>
             <li>
-              <Link href='/' target="_blank">
+              <Link href='/www.container.com' target="_blank">
                 <a className='gl_regular'>www.container.com
                   <img src='/Images/Vector.png' />
                 </a>

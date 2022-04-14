@@ -2,7 +2,6 @@ import React from 'react';
 import styles from './tab.module.css'
 const Card = () => {
   return (
-   
       <div className={styles['tab_cards']}>
         <div className={styles['card_left']}>
           <div className={styles['card']}>

@@ -2,13 +2,14 @@ import styles from './index.module.css'
 import "swiper/css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper";
+import Link from 'next/dist/client/link';
 export default function SwiperReviews() {
 
   return (
     <div className={styles['news_cards']}>
       <Swiper
        slidesPerView={3}
-       spaceBetween={30}
+       spaceBetween={25}
        slidesPerGroup={3}
        autoplay={{
          delay: 2500,
@@ -28,13 +29,15 @@ export default function SwiperReviews() {
           },
          1440: {       
           slidesPerView: 3,       
-          spaceBetween: 30     
+          spaceBetween: 25     
        }
        }
       }
       >
         <SwiperSlide>
-          <div className={styles['card']}>
+         <Link href="/">
+         <a>
+         <div className={styles['card']}>
             <div className={styles['card_top']}>
               <div className={styles['image']}>
                 <img src='/Images/News.png' />
@@ -64,9 +67,13 @@ export default function SwiperReviews() {
               </p>
             </div>
           </div>
+         </a>
+         </Link>
         </SwiperSlide>
         <SwiperSlide >
-          <div className={styles['card']}>
+        <Link href="/">
+         <a>
+         <div className={styles['card']}>
             <div className={styles['card_top']}>
               <div className={styles['image']}>
                 <img src='/Images/News.png' />
@@ -78,7 +85,6 @@ export default function SwiperReviews() {
                   <path d="M6 2.07422V4.37968" stroke="white" strokeWidth="1.10294" strokeLinecap="round" strokeLinejoin="round" />
                   <path d="M3 6.27051H13" stroke="white" strokeWidth="1.10294" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
-
                 <span className='gl_regular'>14.09.2020</span>
                 <svg width={16} height={17} viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fillRule="evenodd" clipRule="evenodd" d="M1.71484 8.21139C1.71484 8.21139 4.00056 3.43359 8.00056 3.43359C12.0006 3.43359 14.2863 8.21139 14.2863 8.21139C14.2863 8.21139 12.0006 12.9892 8.00056 12.9892C4.00056 12.9892 1.71484 8.21139 1.71484 8.21139Z" stroke="white" strokeWidth="1.14286" strokeLinecap="round" strokeLinejoin="round" />
@@ -97,9 +103,13 @@ export default function SwiperReviews() {
               </p>
             </div>
           </div>
+         </a>
+         </Link>
         </SwiperSlide>
         <SwiperSlide >
-          <div className={styles['card']}>
+        <Link href="/">
+         <a>
+         <div className={styles['card']}>
             <div className={styles['card_top']}>
               <div className={styles['image']}>
                 <img src='/Images/News.png' />
@@ -111,7 +121,6 @@ export default function SwiperReviews() {
                   <path d="M6 2.07422V4.37968" stroke="white" strokeWidth="1.10294" strokeLinecap="round" strokeLinejoin="round" />
                   <path d="M3 6.27051H13" stroke="white" strokeWidth="1.10294" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
-
                 <span className='gl_regular'>14.09.2020</span>
                 <svg width={16} height={17} viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fillRule="evenodd" clipRule="evenodd" d="M1.71484 8.21139C1.71484 8.21139 4.00056 3.43359 8.00056 3.43359C12.0006 3.43359 14.2863 8.21139 14.2863 8.21139C14.2863 8.21139 12.0006 12.9892 8.00056 12.9892C4.00056 12.9892 1.71484 8.21139 1.71484 8.21139Z" stroke="white" strokeWidth="1.14286" strokeLinecap="round" strokeLinejoin="round" />
@@ -130,9 +139,13 @@ export default function SwiperReviews() {
               </p>
             </div>
           </div>
+         </a>
+         </Link>
         </SwiperSlide>
         <SwiperSlide>
-          <div className={styles['card']}>
+        <Link href="/">
+         <a>
+         <div className={styles['card']}>
             <div className={styles['card_top']}>
               <div className={styles['image']}>
                 <img src='/Images/News.png' />
@@ -144,7 +157,6 @@ export default function SwiperReviews() {
                   <path d="M6 2.07422V4.37968" stroke="white" strokeWidth="1.10294" strokeLinecap="round" strokeLinejoin="round" />
                   <path d="M3 6.27051H13" stroke="white" strokeWidth="1.10294" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
-
                 <span className='gl_regular'>14.09.2020</span>
                 <svg width={16} height={17} viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fillRule="evenodd" clipRule="evenodd" d="M1.71484 8.21139C1.71484 8.21139 4.00056 3.43359 8.00056 3.43359C12.0006 3.43359 14.2863 8.21139 14.2863 8.21139C14.2863 8.21139 12.0006 12.9892 8.00056 12.9892C4.00056 12.9892 1.71484 8.21139 1.71484 8.21139Z" stroke="white" strokeWidth="1.14286" strokeLinecap="round" strokeLinejoin="round" />
@@ -163,9 +175,13 @@ export default function SwiperReviews() {
               </p>
             </div>
           </div>
+         </a>
+         </Link>
         </SwiperSlide>
         <SwiperSlide >
-          <div className={styles['card']}>
+        <Link href="/">
+         <a>
+         <div className={styles['card']}>
             <div className={styles['card_top']}>
               <div className={styles['image']}>
                 <img src='/Images/News.png' />
@@ -177,7 +193,6 @@ export default function SwiperReviews() {
                   <path d="M6 2.07422V4.37968" stroke="white" strokeWidth="1.10294" strokeLinecap="round" strokeLinejoin="round" />
                   <path d="M3 6.27051H13" stroke="white" strokeWidth="1.10294" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
-
                 <span className='gl_regular'>14.09.2020</span>
                 <svg width={16} height={17} viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fillRule="evenodd" clipRule="evenodd" d="M1.71484 8.21139C1.71484 8.21139 4.00056 3.43359 8.00056 3.43359C12.0006 3.43359 14.2863 8.21139 14.2863 8.21139C14.2863 8.21139 12.0006 12.9892 8.00056 12.9892C4.00056 12.9892 1.71484 8.21139 1.71484 8.21139Z" stroke="white" strokeWidth="1.14286" strokeLinecap="round" strokeLinejoin="round" />
@@ -196,9 +211,13 @@ export default function SwiperReviews() {
               </p>
             </div>
           </div>
+         </a>
+         </Link>
         </SwiperSlide>
         <SwiperSlide >
-          <div className={styles['card']}>
+        <Link href="/">
+         <a>
+         <div className={styles['card']}>
             <div className={styles['card_top']}>
               <div className={styles['image']}>
                 <img src='/Images/News.png' />
@@ -210,7 +229,6 @@ export default function SwiperReviews() {
                   <path d="M6 2.07422V4.37968" stroke="white" strokeWidth="1.10294" strokeLinecap="round" strokeLinejoin="round" />
                   <path d="M3 6.27051H13" stroke="white" strokeWidth="1.10294" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
-
                 <span className='gl_regular'>14.09.2020</span>
                 <svg width={16} height={17} viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fillRule="evenodd" clipRule="evenodd" d="M1.71484 8.21139C1.71484 8.21139 4.00056 3.43359 8.00056 3.43359C12.0006 3.43359 14.2863 8.21139 14.2863 8.21139C14.2863 8.21139 12.0006 12.9892 8.00056 12.9892C4.00056 12.9892 1.71484 8.21139 1.71484 8.21139Z" stroke="white" strokeWidth="1.14286" strokeLinecap="round" strokeLinejoin="round" />
@@ -229,6 +247,8 @@ export default function SwiperReviews() {
               </p>
             </div>
           </div>
+         </a>
+         </Link>
         </SwiperSlide>
 
       </Swiper>

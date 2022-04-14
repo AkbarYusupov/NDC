@@ -1,5 +1,5 @@
 import styles from './index.module.css'
-import Link from 'next/link'
+import Link from 'next/dist/client/link';
 import { useTranslation } from 'next-i18next';
 export default function Initiators() {
   const { t } = useTranslation('common');
@@ -16,11 +16,14 @@ export default function Initiators() {
          {t("mainTop-3")}
           </span>
           <br className={styles['br']}/>
-          <span className='gl_regular'>{t("mainTop-3")}
-            <p className='gl_regular'>
+        <div className={styles['initiators_desc-text']}>
+        <span className='gl_regular'>
             {t("mainTop-3")}
-            </p>
           </span>
+          <span className='gl_regular'>
+            {t("mainTop-3")}
+            </span>
+        </div>
         </div>
         <div className={styles['initiators_cards']}>
           <Link href='/'>

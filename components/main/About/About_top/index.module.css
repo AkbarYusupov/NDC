@@ -24,14 +24,18 @@
   color: #FFFFFF;
   padding-bottom: 24px;
 }
-.competencies_left p{
+.competencies_left{
+  max-width: 708px;
+}
+.competencies_left span{
   font-size: 24px;
   line-height: 36px;
   color: #FFFFFF;
   opacity: 0.8;
+  display: block;
   max-width: 608px;
 }
-.competencies_left p:first-of-type{
+.competencies_left span:first-of-type{
   padding-bottom: 40px;
 } 
 .competencies_right ul li{

@@ -1,11 +1,12 @@
 .news_cards{
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   gap: 24px;
   padding-bottom: 120px;
 }
 .card{
   border: 1px solid #6066666b;
+  width: 100%;
 }
 .image{
   padding:  24px 24px 16px 24px;

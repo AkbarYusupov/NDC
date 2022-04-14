@@ -14,24 +14,24 @@ function index() {
            <div className= {styles["box_card"]}>
            <span className='gl_regular'>20+</span>
            <hr className={styles['line']}/>
-            <p className='gl_regular'>Лет в бизнесе</p>
+            <span className='gl_regular'>Лет в бизнесе</span>
            </div>
            <div className={styles['box_card']}>
            <span className='gl_regular'>30</span>
            <hr className={styles['line']}/>
-            <p className='gl_regular'>Члены команды</p>
+            <span className='gl_regular'>Члены команды</span>
            </div>
           </div>
           <div className={styles['box_bottom']}>
            <div className={styles['box_card']}>
            <span className='gl_regular'>350+</span>
            <hr className={styles['line']}/>
-            <p className='gl_regular'>Реализованные проекты</p>
+            <span className='gl_regular'>Реализованные проекты</span>
            </div>
             <div className={styles['box_card']}>
             <span className='gl_regular'>05</span>
             <hr className={styles['line']}/>
-            <p className='gl_regular'>Сотрудничество с более чем странами</p>
+            <span className='gl_regular'>Сотрудничество с более чем странами</span>
             </div>
           </div>
         </div>

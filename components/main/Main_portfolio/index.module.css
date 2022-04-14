@@ -42,38 +42,14 @@
   object-fit: cover;
 }
 
-/* .update{
-  text-align: center;
-  margin-bottom: 80px;
-}
-.update button{
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  border: 1px solid white;
-  outline: none;
-  background-color: transparent;
-  transition: .5s ease;
-}
-.update button:hover  {
-  background-color: #FFFFFF;
-  cursor: pointer;
-}
-.update button svg{
-  transition: .5s ease;
-}
-.update button:hover svg{
-  transform: rotate(360deg);
-  width: 42px;
-  height: 38px;
-}
-.update button:hover svg path{
-stroke: black;
-} */
+
 @media screen and (max-width: 1024px) {
 .portfolio_top{
  display: block;
  padding-top: 50px;
+}
+.portfolio_top ul{
+  justify-content: flex-start;
 }
 .portfolio_name{
   margin-bottom: 24px;

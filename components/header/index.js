@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from 'next/dist/client/link';
 import styles from './index.module.css'
 import { useState } from 'react'
 import { useRouter } from 'next/router'
@@ -69,7 +69,7 @@ function Header() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/services" >
+                  <Link href="services"  >
                     <a onClick={() => {
                       setMenu(false)
                       document.querySelector('body').classList.toggle('lock');
@@ -77,7 +77,7 @@ function Header() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/portfolio" >
+                  <Link href="portfolio" >
                     <a onClick={() => {
                       setMenu(false)
                       document.querySelector('body').classList.toggle('lock');
@@ -85,7 +85,7 @@ function Header() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/about" >
+                  <Link href="about" >
                     <a onClick={() => {
                       setMenu(false)
                       document.querySelector('body').classList.toggle('lock');
@@ -93,7 +93,7 @@ function Header() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/contact" >
+                  <Link href="contact" >
                     <a onClick={() => {
                       setMenu(false)
                       document.querySelector('body').classList.toggle('lock');

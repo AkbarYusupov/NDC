@@ -1,5 +1,5 @@
 import styles from './index.module.css'
-import Link from 'next/link'
+import Link from 'next/dist/client/link';
 import Button from '../Button/index'
 import { useTranslation } from 'next-i18next';
 export default function MainTop() {
@@ -21,11 +21,13 @@ export default function MainTop() {
       </div>
       </div>
       <div className={styles['main_btn-bottom']}>
-        <button>
-          <Link href="#portfolio">
-          <a></a>
-          </Link>
-        </button>
+      <Link href="#portfolio">
+       
+          
+          <a> <button>  </button>     </a>
+        
+      
+        </Link>
         </div>
     </div>
   )

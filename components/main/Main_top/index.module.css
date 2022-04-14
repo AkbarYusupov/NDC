@@ -36,10 +36,6 @@
   position: relative;
   top: 200px;
   z-index: 11;
-  transition: 0.5s ease;
-}
-.btn:hover{
-  transform: rotate(30deg);
 }
 .main_btn-bottom{
   position: absolute;
@@ -62,9 +58,9 @@
   left: 50%;
   bottom: 5%;
   cursor: pointer;
- 
 }
-.main_btn-bottom button a{
+
+.main_btn-bottom button::after{
   width: 12px;
   height: 12px;
   background: white;
@@ -74,11 +70,29 @@
   left: 50%;
   transform: translate(-50%, 0);
   border-radius: 50%;
-  transition: .5s ease;
+  /* transition: .5s ease; */
   cursor: pointer;
+  animation: down 1.5s infinite;
 }
-.main_btn-bottom button:hover a{
-  bottom: 15%;
+@keyframes down {
+  0% {top: 15%;
+    opacity: 0;
+  }
+  50%{
+    opacity: 1;
+  }
+  100% {top: 70%;
+    opacity: 0.1;
+  }
+}
+
+@keyframes rotate_txt{
+  0%{
+    transform: rotate(0);
+  }
+  100%{
+    transform: rotate(-1turn);
+  }
 }
 @media screen and (max-width: 1366px) {
  

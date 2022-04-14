@@ -10,20 +10,22 @@
   background-repeat: no-repeat;
   background-position: center;
   width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .form_left h1{
   font-weight: 600;
   font-size: 64px;
   line-height: 64px;
   color: #FFFFFF;
-  padding: 48px 0px 16px 48px;
 }
-.form_left p{
+.form_left span{
   font-size: 24px;
   line-height: 32px;
   color: #FFFFFF;
   opacity: 0.8;
- padding: 16px 0 0 48px;
+
 }
 .form_left a{
   font-size: 20px;
@@ -32,11 +34,16 @@
   opacity: 0.8;
   display: block;
 }
-.form_left a:first-of-type{
-  padding: 232px 0 0 48px;
+.form__left-top{
+  padding: 48px 130px 16px 48px;
+  gap: 24px;
+  display: flex;
+  flex-direction: column;
 }
-.form_left a:last-of-type{
-  padding: 0 48px 0 48px;
+.form__left-bottom{
+  padding: 0 0 16px 48px;
+  display: flex;
+  flex-direction: column;
 }
 .form_right{
   background-color: #1878F3;
@@ -148,9 +155,6 @@
   z-index: 11;
   transition: 0.5s ease;
 }
-.btn:hover{
-  transform: rotate(30deg);
-}
 @media screen and (max-width: 1200px) {
 .form{
   display: block;
@@ -184,18 +188,26 @@
   .btn{
     bottom: 4%;
   }
+  .contact__form-top{
+  flex-wrap: wrap;
+  }
+  .contact__form-top input{
+    width: 100%;
+}
 }
 @media screen and (max-width: 578px) {
+  .form__left-top, .form__left-bottom{
+    padding: 0;
+    gap: 10px;
+  }
  .select{
    display: block;
  }
 .form_left a:first-of-type{
-  padding: 20px 48px 0 48px;
   font-size: 16px;
   text-align: center;
 }
 .form_left a:last-of-type{
-  padding: 0 48px 20px 48px;
   font-size: 16px;
   text-align: center;
 }
@@ -206,7 +218,7 @@
   text-align: center;
 }
 .form_left p{
-  padding: 24px 24px 16px 24px;
+  padding: 24px 10px 16px 10px;
   text-align: center;
 }
 .form_left br{
