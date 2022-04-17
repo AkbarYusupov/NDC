@@ -3,6 +3,7 @@ import styles from './index.module.css'
 import { useState } from 'react'
 import { useRouter } from 'next/router'
 import { useTranslation } from 'next-i18next';
+
 function Header() {
   const { t } = useTranslation('common');
   const [menu, setMenu] = useState(false);
@@ -24,7 +25,7 @@ function Header() {
                     }}
                     locale="ru"
                     scroll={false}>
-                <a className={` gl_regular ${router.pathname == "/blog" ? styles['header__link-active'] : ""}`}>Rus</a>
+                <a className='gl_regular'>Rus</a>
               </Link>
               <Link  href={{
                       pathname: router.pathname,
@@ -69,7 +70,7 @@ function Header() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="services"  >
+                  <Link href="services" >
                     <a onClick={() => {
                       setMenu(false)
                       document.querySelector('body').classList.toggle('lock');

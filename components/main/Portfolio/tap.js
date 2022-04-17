@@ -96,7 +96,7 @@ export default function CustomizedTabs() {
   return (
     <>
       <div className='container'>
-        <Box className={styles['box']}>
+        <Box className={styles['box']} id='tab_cards'>
           <span className={`gl_regular ${styles['tab_name']}`}>
             Работы
           </span>

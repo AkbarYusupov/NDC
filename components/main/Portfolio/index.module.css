@@ -10,7 +10,7 @@
   line-height: 72px;
   color: #FFFFFF;
 }
-.portfolio_top span{
+.portfolio_top span , .portfolio_text span{
   max-width: 708px;
   display: block;
   font-size: 32px;
@@ -18,7 +18,43 @@
   color: #FFFFFF;
   opacity: 0.8;
 }
-.portfolio{
+.portfolio_text{
+  padding-top: 160px;
+  padding-bottom: 72px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.image{
+  padding-bottom: 120px;
+  width: 100%;
+}
+.image img{
+  width: 100%;
+}
+.portfolio_text a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  outline: none;
+  border: 1px solid #1878F3;
+  box-sizing: border-box;
+  background: #020105;
+  transition: .5s ease;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #FFFFFF;
+}
+.portfolio_text a:hover{
+  background-color: white;
+  color: #1878F3;
+}
+.portfolio , .portfolio_inner{
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -28,9 +64,9 @@
   position: relative;
 }
 .portfolio_btn{
-  transform: rotate(120deg);
+  display: block;
+  transform: rotate(90deg);
   max-height: 100%;
-
 }
 .portfolio_img{
   max-width: 708px;
@@ -41,6 +77,9 @@
 }
 @media screen and (max-width: 1366px) {
 .portfolio{
+  padding-top: 60px;
+}
+.portfolio_inner{
   padding-top: 60px;
 }
 }
@@ -54,13 +93,38 @@
   max-width: 100%;
   }
   }
-
+  @media screen and (max-width: 1024px) {
+    .portfolio_text{
+    padding-top: 100px;
+    }
+    .portfolio_text a{
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    }
+    .portfolio_text span{
+    max-width: 100%;
+    padding-bottom: 40px;
+    font-size: 26px;
+    line-height: 30px;
+    }
+  }
 @media screen and (max-width: 950px) {
-  .portfolio{
+  .portfolio ,.portfolio_inner {
  justify-content: center;
+}
+.portfolio_text{
+  padding-top: 50px;
+}
+.portfolio_inner{
+  padding-top: 30px;
 }
 .portfolio_btn{
 order: 2;
+}
+.portfolio_text {
+  display: block;
+  text-align: center;
 }
 .portfolio_img{
   max-width: 100%;
@@ -79,13 +143,22 @@ order: 2;
   font-size: 20px;
   line-height: 24px;
   }
+  .portfolio_text a{
+    width: 100px;
+    height: 100px;
+    font-size: 14px;
+    }
   }
 @media screen and (max-width: 650px) {
 .portfolio_top h1{
-  font-size: 40px;
+  font-size: 30px;
+  line-height: 30px;
 }
 .portfolio{
   padding-top: 30px;
+}
+.portfolio_text{
+  padding-bottom: 40px;
 }
 
 }
@@ -93,4 +166,9 @@ order: 2;
   .portfolio_top span{
     font-size: 16px;
   }
+  .portfolio_text span{
+    font-size: 18px;
+    line-height: 24px;
+    }
+  
 }
