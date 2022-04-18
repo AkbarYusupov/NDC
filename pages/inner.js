@@ -13,7 +13,7 @@ const Id = () => {
 
 export default Id;
 
-export const getStaticProps = async ({ locale }) => ({
+export const getServerSideProps = async ({ locale }) => ({
   props: {
     ...(await serverSideTranslations(locale, ['common'])),
   },
