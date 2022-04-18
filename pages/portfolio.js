@@ -17,7 +17,7 @@ const Postfolio = () => {
 }
 
 export default Postfolio;
-export const getServerSideProps = async ({ locale }) => ({
+export const getStaticProps = async ({ locale }) => ({
   props: {
     ...(await serverSideTranslations(locale, ['common'])),
   },

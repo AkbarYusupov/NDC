@@ -11,7 +11,7 @@ function MyApp({ Component, pageProps }) {
   <>
 <NextSeo
       title="NDS"
-
+      // description=""
     />
 
     <Header  />
@@ -21,7 +21,7 @@ function MyApp({ Component, pageProps }) {
   )
 }
 export default appWithTranslation(MyApp)
-export const getServerSideProps = async ({ locale }) => ({
+export const getStaticProps = async ({ locale }) => ({
   props: {
     ...(await serverSideTranslations(locale, ['common'])),
   },
